@@ -1,2 +1,2 @@
 # MSC-FlightSheet
-GLiding Club Flight Sheet (Web)
+Gliding Club Flight Sheet (Web)
