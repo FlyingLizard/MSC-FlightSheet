@@ -7,3 +7,103 @@
     <link href="/var/www/html/ezEditTable/ezEditTable.css" rel="stylesheet" type="text/css">
     <script src="/var/www/html/ezEditTable/ezEditTable.js"></script>
 </head>
+
+
+
+
+
+<body>
+    <h1>ezEditTable Starter</h1>
+
+    <table id="demo" cellspacing="0" cellpadding="0">
+        <thead>
+                    <tr>
+                        <th>From</th>
+                        <th>Destination</th>
+                        <th>Road Distance (km)</th>
+                        <th>By Air (hrs)</th>
+                        <th width="15%">By Rail (hrs)</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Sydney</strong></td>
+                        <td>Adelaide</td>
+                        <td>1412</td>
+                        <td>1.4</td>
+                        <td>25.3</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sydney</strong></td>
+                        <td>Brisbane</td>
+                        <td>982</td>
+                        <td>1.5</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sydney</strong></td>
+                        <td>Canberra</td>
+                        <td>286</td>
+                        <td>.6</td>
+                        <td>4.3</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sydney</strong></td>
+                        <td>Melbourne</td>
+                        <td>872</td>
+                        <td>1.1</td>
+                        <td>10.5</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Adelaide</strong></td>
+                        <td>Perth</td>
+                        <td>2781</td>
+                        <td>3.1</td>
+                        <td>38</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Adelaide</strong></td>
+                        <td>Alice Springs</td>
+                        <td>1533</td>
+                        <td>2</td>
+                        <td>20.25</td>
+                    </tr>
+                     <tr>
+                        <td><strong>Adelaide</strong></td>
+                        <td>Brisbane</td>
+                        <td>2045</td>
+                        <td>2.15</td>
+                        <td>40</td>
+                    </tr>
+        </tbody>
+    </table>
+
+    <!--<script language="javascript" type="text/javascript">
+        var config = {
+            selection: true,
+            default_selection: 'both'
+        };
+        var et = new EditTable('demo', config);
+        et.Init();
+    </script>-->
+    
+<script language="javascript" type="text/javascript">
+	var table7_Config = {
+		editable: true,
+		auto_save: false,
+		default_selection: 'both',
+		cell_editors:[
+			{ type: 'select', attributes:[['title','Choose a continent']] },
+			{ type: 'input', css:'alignRight' },
+			{ type: 'textarea', style:'background-color: yellow;' },
+			{ type: 'input', attributes:[['maxLength',5],['title','5 chars max']] },
+			{ type: 'none' }
+		]
+	};
+var et7 = setEditTable('demo', table7_Config);
+</script>
+    
+
+</body>
+</html>
